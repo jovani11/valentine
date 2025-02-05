@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "j7VA4j1WHqfwdk_1k",
+      });
+   })();
+</script>
+
+
+
+<script src="./send.js"></script>
+<body>
+    <div id="container">
+        <img id="img" src="./cat.gif" alt="">
+        <p id="text">Will you be my valentine?</p>
+        <div id="sub-c" class="sub-container">
+            <button onclick="yes()" id="yes">Yes</button>
+            <button onclick="no()" id="no">No</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+   
+</body>
+</html>
